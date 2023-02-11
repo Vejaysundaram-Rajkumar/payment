@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+        .mainheading{
+            font-size: 50px;
+            font-weight: bolder;
+            position: relative;
+            left: 30px;
+            top:14px;
+            border-radius: 15px;
+            width: fit-content;
+            
+        }
+        .sideheading{
+            font-size: 25px;
+            position: relative;
+            font-weight: bolder;
+            border-radius: 15px;
+            top:30px;
+            width: fit-content;
+            justify-content: center;
+        }
+        .card-front, .card-back {
+  width: 100%;
+  height: 120%;
+  background-color: #2a2b38;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+  position: absolute;
+  border-radius: 6px;
+  
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+        .line1{
+            background-color:black;
+            height: 1mm;
+            width:570px;
+            position: relative;
+            top:10px;
+        }
+        .line2{
+            background-color:black;
+            height: 1mm;
+            width:497px;
+            position: relative;
+            top:1px;
+        }
+        .innerbill{
+            background-color: rgba(252, 252, 252, 0.973);
+            width:500px;
+            height: 550px;
+            position:relative;
+            border-radius: 15px;
+            top: 25px;
+            left: 5%;
+            border-color: black;
+            border-width: 10px;
+            border-style:double;
+        }
+        .billbottom{
+            background-color:wheat;
+            position: relative;
+            left: 10px;
+            top:40px;
+            width:480px;
+            height:300px;
+            opacity: 90%;
+            border-radius: 5px;
+        }
+        body{
+            background-color: #1f2029;
+        }
+        .Checkout{
+            width:190px;
+            height:40px;
+            position:relative;
+            left: 280px;
+            top: 140px;
+            border-radius: 10px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+    <div class="container">
+    <div class="row medium-height justify-content-center">
+    <div class="col-13 text-center align-self-center py-5">
+    <div class="section pb-5 pt-5 pt-sm-2 text-center">
+    <div class="card-3d-wrap mx-auto">
+    <div class="card-3d-wrapper">
+    <div class="card-front"  >
+    <div class="center-wrap">
+    <div class="mainheading"># Order Summary</div>
+    <hr class="line1">
+    <div class="innerbill">
+        <div class="billtop">
+        <h3 style="width:fit-content">ORDER NO :</h3>
+        <h3 style="width:fit-content">DATE :</h3>
+    </div>
+        <hr class="line2">
+        <div class="billbottom">
+            <br>
+        <h4 style="width:fit-content">Color of the print:</h4>
+        <h4 style="width:fit-content">Type of the print:</h4>
+        <h4 style="width:fit-content">Number of copies to be printed:</h4>
+        <div class="sideheading">GrandTotal:</div>
+        <button class="Checkout">Checkout</button>
+        </div>
+    </div>    
+    
+    </div>
+   
+    <div class="section">
+        <div class="container">
+        <div class="row medium-height justify-content-center">
+        <div class="col-13 text-center align-self-center py-5">
+        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+        <div class="card-3d-wrap mx-auto">
+        <div class="card-3d-wrapper">
+        <div class="card-front"  >
+        <div class="center-wrap">
+          <!--ques3-->
+            <div class="section" id="ques3" hidden>
+              <label>
+                <h2>How do you want to print?</h2><br>
+                <h4><input type="radio" name="side" value=0 checked>Front And Back&emsp;
+                <input type="radio" name="side" value=1>Single Side</h4>
+                <div>
+                <button onclick="back3()" class="btn mt-4" id="back3" >Back</button>
+                <button onclick="next4()" class="btn mt-4" id="next4" >Proceed</button> 
+              </div>
+              </label>
+          
+              </div>
+</body>
+</html>
