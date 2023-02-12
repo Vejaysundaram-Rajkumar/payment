@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fontstyle{
+    width:fit-content;
+    position: relative;
+    left:20px;
+    top:10px;
+
+}
+body
+{
+    height: 100%;
+    width: 100%;
+    background: #1f2029;
+}
+.mainheading{
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    left: 30px;
+    top:14px;
+    border-radius: 15px;
+    width: fit-content;
+    color:white;
+    
+}
+.sideheading{
+    left:20px;
+    font-size: 25px;
+    position: relative;
+    font-weight: bolder;
+    border-radius: 15px;
+    top:30px;
+    width: fit-content;
+  
+}
+.flip-card-3D-wrapper {
+  width: 60%;
+  height: 80%;
+  max-width: 300px;
+  max-height: 500px;
+  position: relative;
+  -o-perspective: 900px;
+  -webkit-perspective: 900px;
+  -ms-perspective: 900px;
+  perspective: 900px;
+  margin: 0 auto;
+}
+.outerbox{
+    height:780px;
+}
+#flip-card {
+  width: 550px;
+  height: 600px;
+  text-align: center;
+  margin:10% auto;
+  position: absolute;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -o-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.do-flip {
+  -o-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+#flip-card-btn-turn-to-back{
+  position: absolute;
+  top: 510px;
+  left: 380px;
+  width: 140px;
+  height: 40px;
+  background: white;
+  cursor: pointer;
+  visibility: hidden;
+  font-size: 20px;
+  font-weight:bolder;
+  color: black;
+  background-color: aqua;
+  border: 1px solid grey;
+}
+#flip-card-btn-turn-to-front {
+    position: absolute;
+    top: 630px;
+    left: 50px;
+    width: 140px;
+    height: 40px;
+    background: white;
+    cursor: pointer;
+    visibility: hidden;
+    font-size: 20px;
+    font-weight:bolder;
+    color: black;
+    background-color: aqua;
+    
+    border: 1px solid grey;
+  }
+.line1{
+    background-color:black;
+    height: 1mm;
+    width:570px;
+    position: relative;
+    top:10px;
+}
+.line2{
+    background-color:black;
+    height: 1mm;
+    width:484px;    
+    position: relative;
+    top:1px;
+}
+.innerbill{
+    background-color: rgba(252, 252, 252, 0.973);
+    width:500px;
+    height: 500px;
+    position:relative;
+    border-radius: 15px;
+    top: 10px;
+    left: 50px;
+    border-color: black;
+    border-width: 10px;
+    border-style:double;
+}
+.money{
+    font-size: 50px;
+    font-weight: bolder;
+    position: relative;
+    left: 150px;
+    top:34px;
+    border-radius: 15px;
+    width: fit-content;
+    color:white;
+   
+}
+.billbottom{
+    /*
+    background-color:#2a2b38;*/
+    position: relative;
+    left: 1px;
+    top:4px;
+    width:480px;
+    opacity: 60px;
+    height:300px;
+    border-radius: 5px;
+}
+#flip-card .flip-card-front, #flip-card .flip-card-back{  
+    -o-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+  -webkit-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  -moz-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+}
+.image{
+    width:300px;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+#flip-card .flip-card-front {
+    width: 600px;
+    height: 720px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    position: absolute;
+    right: 100px;
+    border-radius: 6px;
+    padding-bottom: 100px;
+    background-color: #2a2b38;
+    border:1px solid grey;
+}
+#flip-card .flip-card-back {
+    width: 600px;
+    height: 700px;
+    
+    padding-bottom: 100px;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    position: absolute;
+    left:100px;
+    border-radius: 6px;
+    background-color: #2a2b38;
+    border:1px solid grey;
+    border: 1px solid grey;
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+#flip-card .flip-card-front p, #flip-card .flip-card-back p {
+  color: grey;
+  display: block;
+  position: absolute;
+  top: 3%;
+  width: 100%;
+}
