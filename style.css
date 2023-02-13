@@ -11,8 +11,8 @@ html * {
 @media screen and (max-width: 390px) and (min-width:844px)
 {
   .outerbox{
-    position: relative;
-    right:600px;
+    position: absolute;
+    
     
   }  
 }
@@ -50,8 +50,8 @@ body
   
 }
 .flip-card-3D-wrapper {
-  width: 60%;
-  height: 80%;
+  width: fit-content;
+  height: fit-content;
   max-width: 300px;
   max-height: 500px;
   position: relative;
@@ -62,16 +62,16 @@ body
   margin: 0 auto;
 }
 .outerbox{
-    width: 900px;
-    height:780px;
-    position: relative;
-    left:300px;
+    width: fit-content;
+    height:fit-content;
+    position: absolute;
+    left:48%;
 }
 #flip-card {
   width: 550px;
   height: 600px;
   text-align: center;
-  margin:10% auto;
+  
   position: absolute;
   -o-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
