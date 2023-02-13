@@ -8,6 +8,14 @@ html * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+@media screen and (max-width: 390px) and (min-width:844px)
+{
+  .outerbox{
+    position: relative;
+    right:600px;
+    
+  }  
+}
 .fontstyle{
     width:fit-content;
     position: relative;
@@ -17,8 +25,7 @@ html * {
 }
 body
 {
-    height: 100%;
-    width: 100%;
+
     background: #1f2029;
 }
 .mainheading{
@@ -55,7 +62,10 @@ body
   margin: 0 auto;
 }
 .outerbox{
+    width: 900px;
     height:780px;
+    position: relative;
+    left:300px;
 }
 #flip-card {
   width: 550px;
